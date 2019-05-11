@@ -10,4 +10,6 @@ RUN apt-get -y update && apt-get install -y wget
 RUN apt-get install -y vim
 RUN apt-get install -y git
 
+CMD cd
 CMD git clone https://github.com/solomonshashank/see_kube.git
+CMD cd see_kube
