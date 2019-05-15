@@ -11,9 +11,8 @@ RUN pip install --upgrade pip
 
 # Install useful python libraries and tools
 RUN pip install pandas matplotlib sklearn scipy codegen pyimage pydot
-RUN apt-get install -y vim python-tk graphviz sudo
+RUN apt-get install -y vim 
 RUN apt-get install -y git
-RUN pip install sympy==1.2
 
 # Install tensorflow-gpu
 RUN pip install --upgrade tensorflow-gpu
