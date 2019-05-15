@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.13.1-gpu
+FROM tensorflow/tensorflow:devel-gpu
 
 MAINTAINER Shashank Solomon <s2solomo@ucsd.edu>
 
