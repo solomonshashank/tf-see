@@ -6,8 +6,9 @@ MAINTAINER Shashank Solomon <s2solomo@ucsd.edu>
 RUN pip install --upgrade pip
 
 # Install useful python libraries and tools
-RUN apt-get install -y vim
-RUN apt-get install -y git
+RUN apt install -y vim
+RUN apt install -y git
+RUN apt install -y cron
 
 CMD cd ~
 CMD git clone https://github.com/solomonshashank/see_kube.git
