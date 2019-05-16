@@ -6,10 +6,7 @@ MAINTAINER Shashank Solomon <s2solomo@ucsd.edu>
 RUN pip install --upgrade pip
 
 # Install useful python libraries and tools
-RUN apt install -y vim
-RUN apt install -y git
-RUN apt install -y cron
+RUN apt install -y vim git cron
+RUN pip install tensorflow-gpu
 
-CMD cd ~
-CMD git clone https://github.com/solomonshashank/see_kube.git
-CMD cd see_kube
+CMD cd /root/ && git clone https://github.com/solomonshashank/see_kube.git && cd see_kube
