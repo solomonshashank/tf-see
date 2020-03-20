@@ -13,3 +13,5 @@ RUN apt-get update
 # RUN apt-get install -y vim
 # RUN pip install keras
 RUN pip install h5py
+RUN pip install packaging
+RUN pip install git+https://github.com/Xilinx/brevitas.git
